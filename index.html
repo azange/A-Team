@@ -5,32 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    #map-picture
-    {
-      max-width: 100%;
-      height: auto;
-    }
-    .zoomable-image {
-      cursor: pointer;
-    }
-  </style>
+    <link rel="stylesheet" href="stylesheet.css">
+
   </head>
-<body>
-    <nav class="p-3 navbar navbar-expand-lg fixed-top d-flex justify-content-between align-items-center shadow-lg bg-body-tertiary">
+<body class="bg-dark">
+    <nav class="p-3 navbar navbar-expand-lg fixed-top d-flex justify-content-between align-items-center shadow-lg border-bottom vienna-color-border border-2 bg-dark">
         <img src="logo.png" height="100" alt="VIENNA-MAP Logo">
         <div class="dropdown">
-            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Standard Karte
+            <button class="btn vienna-color-background text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              Kartenauswahl
             </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><h6 class="dropdown-header">Alle Karten</h6></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item active" href="#" data-map-src="maps/Wien.PNG">Standard Karte</a></li>
+              <li><a class="dropdown-item" href="#" data-map-src="maps/WienerLinien.PNG">Wiener Linien</a></li>
+              <li><a class="dropdown-item" href="#" data-map-src="maps/Einwohnerdichte.PNG">Einwohnerdichte</a></li>
+              <li><a class="dropdown-item" href="#" data-map-src="maps/Gewässer.PNG">Gewässer</a></li>
+              <li><a class="dropdown-item" href="#" data-map-src="maps/Einwohnerentwicklung.PNG">Einwohnerentwicklung</a></li>
             </ul>
           </div>
     </nav>
-    <a href="Wien.PNG" target="_blank"><img src="Wien.PNG" class="img-fluid zoomable-image pt-5 mt-5" id="map-picture" alt=""></a>
+   
+    <a href="maps/Wien.PNG" target="_blank" id="map-link"><img src="maps/Wien.PNG" class="img-fluid zoomable-image pt-5 mt-5" id="map-picture" alt=""></a>
+
+    <footer>
+      <div class="d-flex justify-content-evenly p-5 border-top border-2 vienna-color-border">
+        <a>Impressum</a>
+        <a>Kontakt</a>
+        <a>VIENNA-MAP</a>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>

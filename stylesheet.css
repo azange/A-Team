@@ -1,0 +1,25 @@
+.vienna-color-border
+{
+    border-color: rgb(218, 18, 26) !important;
+}
+.vienna-color-background
+{
+    background-color: rgb(218, 18, 26) !important;
+}
+.vienna-color-text
+{
+    color: rgb(218, 18, 26) !important;
+}
+
+#map-picture
+{
+  width: 100%;
+}
+.zoomable-image {
+  cursor: pointer;
+}
+
+*
+{
+    color: white !important;
+}
