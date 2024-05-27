@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-*
+*:not(.dropdown-item)
 {
     color: white !important;
 }
