@@ -19,22 +19,45 @@
 <body class="bg-dark">
     <nav class="p-3 navbar navbar-expand-lg fixed-top d-flex justify-content-between align-items-center shadow-lg border-bottom vienna-color-border border-2 bg-dark">
         <img src="logo.png" height="100" alt="VIENNA-MAP Logo">
-        <div class="dropdown">
-            <button class="btn vienna-color-background text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+
+        <div class="dropdown dropstart">
+            <button class="btn vienna-color-background text-light dropdown-toggle btn-lg" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
               Kartenauswahl
             </button>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><h6 class="dropdown-header">Alle Karten</h6></li>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-start">
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item active" href="#" data-map-src="maps/Wien.PNG">Standard Karte</a></li>
-              <li><a class="dropdown-item disabled" href="#" data-map-src="maps/WienerLinien.PNG">Wiener Linien</a></li>
-              <li><a class="dropdown-item disabled" href="#" data-map-src="maps/Einwohnerdichte.PNG">Einwohnerdichte</a></li>
-              <li><a class="dropdown-item disabled" href="#" data-map-src="maps/Gewässer.PNG">Gewässer</a></li>
-              <li><a class="dropdown-item" href="#" data-map-src="maps/Einwohnerentwicklung.PNG">Einwohnerentwicklung</a></li>
-            </ul>
-          </div>
+              <li><h6 class="dropdown-header">Wiener Linien</h6></li>
+              
+              <li><a class="dropdown-item" href="#" data-map-src="maps/Schnellverbindungen.PNG" data-map-src-pdf="https://www.wienerlinien.at/documents/2424499/7499660/SVP.pdf/94e696ed-8c33-293b-da01-7bbef75334bc?t=1707905657064">Schnellverbindungen</a></li>
+              <li><a class="dropdown-item" href="#" data-map-src="maps/Gesamtnetzplan-Tag.PNG" data-map-src-pdf="https://www.wienerlinien.at/documents/2424499/7499660/Tagnetz_2023-12.pdf/28d46ca1-e198-b563-8911-c2c6358ee301?t=1707905658399">Netzplan Tag</a></li>
+              <li><a class="dropdown-item" href="#" data-map-src="maps/Gesamtnetzplan-Nacht.PNG" data-map-src-pdf="https://www.wienerlinien.at/documents/2424499/7499660/Nachtnetz_2023-12.pdf/9359cd65-cb65-c897-deb4-deb37fed47a5?t=1707905656283">Netzplan Nacht</a></li>
+              <li><a class="dropdown-item" href="#" data-map-src="maps/Innere_Stadt.PNG" data-map-src-pdf="https://www.wienerlinien.at/documents/2424499/7499660/CityPlan_OhneU2Z.pdf/2810cfeb-4050-932c-b26d-acf927968116?t=1707905654480">Innere Stadt</a></li>
+              <li><a class="dropdown-item" href="#" data-map-src="maps/WC-Stationen.PNG" data-map-src-pdf="https://www.wienerlinien.at/documents/2424499/7499660/SVP_WC_Mai2024.pdf/582a6436-3147-0000-04df-a50da6ab9159?t=1715761781916">WC-Stationen</a></li>
+
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">Demographie</h6></li>
+
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">Ökologie</h6></li>
+
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">Ökonomie / Wirtschaft</h6></li>
+
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">Geschichte</h6></li>
+
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">Andere Karten</h6></li>
+              <li><a class="dropdown-item active" href="#" data-map-src="maps/Wien.PNG" data-map-src-pdf="">Standard Karte</a></li>
+              <li><a class="dropdown-item disabled" href="#" data-map-src="maps/Einwohnerdichte.PNG" data-map-src-pdf="">Einwohnerdichte</a></li>
+              <li><a class="dropdown-item disabled" href="#" data-map-src="maps/Gewässer.PNG" data-map-src-pdf="">Gewässer</a></li>
+              <li><a class="dropdown-item" href="#" data-map-src="maps/Einwohnerentwicklung.PNG" data-map-src-pdf="">Einwohnerentwicklung</a></li>
+                </ul>
+         </div>
     </nav>
    
+  <div class="p-3"></div>
+
     <a href="maps/Wien.PNG" target="_blank" id="map-link"><img src="maps/Wien.PNG" class="img-fluid zoomable-image pt-5 mt-5" id="map-picture" alt=""></a>
 
     <footer>

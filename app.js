@@ -9,11 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Ändere das Bild nur, wenn die Datei existiert
             const newSrc = this.getAttribute('data-map-src');
+            const pdfSrc = this.getAttribute('data-map-src-pdf');
             checkIfFileExists(newSrc)
                 .then(exists => {
                     if (exists) {
                         mapPicture.src = newSrc;
-                        mapLink.href = newSrc;
+                        if(pdfSrc == "")
+                            {
+                                mapLink.href = newSrc;
+                            } else {
+                                mapLink.href = pdfSrc;
+                            }
                         
                         // Setze alle Dropdown-Items zurück
                         dropdownItems.forEach(i => i.classList.remove('active'));
