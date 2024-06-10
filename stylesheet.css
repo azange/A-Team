@@ -23,3 +23,9 @@
 {
     color: white !important;
 }
+
+.dropdown-menu
+{
+  height: 500px;
+  overflow-y: auto !important;
+}
